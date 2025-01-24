@@ -1,9 +1,10 @@
 ---
 const { nomMaison , adresse , prix } = Astro.props;
 ---
-
-<div>
-<h1>{nomMaison}</h1>
-<p>{prix}</p>
-<p>{adresse}</p>
+<div class="max-w-4xl mx-auto mt-6">
+    <div class="relative bg-purple-300 backdrop-blur-xl rounded-2xl p-8 border border-gray-800">
+        <h1 class="relative bg-pink-200 backdrop-blur-xl rounded-2xl p-8 border border-gray-800">{nomMaison}</h1>
+            <p class="absolute top-0 right-0 w-20 h-20  rounded-tr-2xl ">{prix}</p>
+                <p class="">{adresse}</p>
+    </div>
 </div>
