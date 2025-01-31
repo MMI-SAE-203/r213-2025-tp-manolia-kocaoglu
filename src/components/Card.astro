@@ -3,11 +3,11 @@ const {...offre} = Astro.props;
 ---
 <div class="max-w-xl mx-auto mt-6">
     <h1 class="relative text-xl font-bold backdrop-blur-xl rounded-2xl p-8 border border-gray-800">{offre.nomMaison}</h1>
-    <div class="relative bg-blue-300 backdrop-blur-xl rounded-2xl p-8 border border-gray-800">
+    <div class="relative font-bold bg-blue-300 backdrop-blur-xl rounded-2xl p-8 border border-gray-800">
         <h1 class="relative bg-purple-200 backdrop-blur-xl rounded-2xl p-8 border border-gray-800">
             <img src={offre.img}  class="rounded-2xl"/>
         </h1>
-            <p class="absolute top-0 right-0 w-20 h-20  rounded-tr-2xl ">{offre.prix}</p>
-                <p class="">{offre.adresse}</p>
+          <!--   <p class="absolute top-0 right-0 w-20 h-20  rounded-tr-2xl ">{offre.prix}</p> -->
+                <!-- <p class="">{offre.adresse}</p> -->
     </div>
 </div>
