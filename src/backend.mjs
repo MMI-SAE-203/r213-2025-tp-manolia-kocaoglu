@@ -105,7 +105,7 @@ export async function filterByPrix(prixMin, prixMax) {
             filter: `prix >= ${prixMin} && prix <= ${prixMax}`
         });
         data = data.map((maison) => {
-            maison.imageUrl = pb.files.getURL(maison, maison.image);
+            maison.img = pb.files.getURL(maison, maison.images);
             return maison;
         });
         return data;
